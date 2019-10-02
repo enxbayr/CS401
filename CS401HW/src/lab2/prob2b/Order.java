@@ -8,12 +8,12 @@ public class Order {
 	private static int autoInc = 1;
 	private int orderId;
 	private LocalDate orderDate;
-	private List<OrderLine> orderLine= new ArrayList<OrderLine>();
+	private List<OrderLine> orderLines = new ArrayList<OrderLine>();
 	
 	Order(String linenum, Double price, int quantity){
 		this.orderId = autoInc;
 		this.orderDate = LocalDate.now();
-		this.orderLine.add(new OrderLine(linenum, price, quantity, this));
+		this.orderLines.add(new OrderLine(linenum, price, quantity, this));
 		autoInc++;
 	}
 
@@ -30,11 +30,11 @@ public class Order {
 	}
 
 	public List<OrderLine> getOrderLine() {
-		return orderLine;
+		return orderLines;
 	}
 
 	public void addOrderLine(String linenum, Double price, int quantity) {
-		this.orderLine.add(new OrderLine(linenum, price, quantity, this));
+		this.orderLines.add(new OrderLine(linenum, price, quantity, this));
 	}
 
 }
