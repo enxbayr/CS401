@@ -1,0 +1,3 @@
+Looking from given UML diagram, the Circle extends Cylinder, but this is not good case of inheritance.
+Because Cylender has a radius and a height, then Circle only has a radius. It doesn't have a height.
+But, due to this inheritance the circle has to have a height. 

@@ -1,0 +1,7 @@
+The reason:
+
+The "p2" is instance of "Person" and it has only attribute "name". It's equals() uses the "name" for checking equality.
+The "p1" is the  instance of "PersonWithJob" and it extended from "Person". Then, the "p1" and "p2" are both have the name and both are a "Person".
+That's is why "p2.equals(p1)?" is true.
+
+Then "p1" is not "PersonWithJob" and it is not able to be equalized with "PersonWithJob"'s instance.
