@@ -1,0 +1,2 @@
+The equals of Employee hasn't been overridden properly.
+In order to override the parameter of equals must be Object type(supertype).
