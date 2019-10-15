@@ -21,10 +21,10 @@ public class ForEachExample {
 		Consumer<String> consumer = new Consumer<String>() {
 			@Override
 			public void accept(String s) {
-				System.out.println(s);
+				System.out.println(s.toUpperCase());
 			}
 		};
-		System.out.println("------using new forEach method------");
+		System.out.println("*** Using Consumer: ***");
 		list.forEach(consumer);
 	}
 }
