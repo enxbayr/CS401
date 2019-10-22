@@ -31,8 +31,7 @@ public class Commissioned extends Employee {
 		double orderAmount = 0.0;
 		
 		LocalDate dd = LocalDate.of(y, m, 1);
-		dd.minusMonths(1);
-		
+		dd = dd.minusMonths(1);
 		for(Order o : orders) {
 			if(o.getDate().getMonthValue() == dd.getMonthValue() && o.getDate().getYear() == dd.getYear())
 				orderAmount += o.getAmount();
